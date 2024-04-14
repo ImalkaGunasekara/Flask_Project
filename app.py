@@ -73,8 +73,8 @@ def update(id):
 
 
 if __name__=="__main__":
-    # app.run(debug=True) #This will pop up any error in the web page
-    pass
+    app.run(debug=True) #This will pop up any error in the web page
+    
 
 
 
