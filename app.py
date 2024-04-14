@@ -72,8 +72,14 @@ def update(id):
         return render_template("update.html",task=task)
 
 
-if __name__=="__main__":
-    app.run(debug=True) #This will pop up any error in the web page
+# if __name__=="__main__":
+#     app.run(debug=True) #This will pop up any error in the web page
+
+
+if __name__ == "__main__":
+    # This block will run only if the script is executed directly
+    from waitress import serve
+    serve(app, host='0.0.0.0', port=8080)
 
 #Heroku Deployement is still not done!
 
